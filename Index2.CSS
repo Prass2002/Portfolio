@@ -1,0 +1,347 @@
+/* ===== Google Fonts ===== */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Poppins:wght@300;400;600&display=swap");
+
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f8f9fb;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ===== Navbar ===== */
+nav {
+  position: fixed;
+  width: 100%;
+  background: rgba(17, 17, 17, 0.9);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+nav .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 8%;
+}
+
+nav .logo a {
+  font-family: "Cinzel", serif;
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+nav .menu {
+  display: flex;
+  list-style: none;
+}
+
+nav .menu li {
+  margin-left: 25px;
+}
+
+nav .menu li a {
+  text-decoration: none;
+  color: #ddd;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav .menu li a:hover {
+  color: #0077ff;
+}
+
+nav .media-icons a {
+  margin-left: 15px;
+  font-size: 18px;
+  color: #ddd;
+  transition: color 0.3s;
+}
+
+nav .media-icons a:hover {
+  color: #0077ff;
+}
+
+/* ===== Scroll Up Button ===== */
+.scroll-button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #0077ff;
+  padding: 12px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.scroll-button a {
+  color: #fff;
+  font-size: 18px;
+}
+
+/* ===== Sections Common ===== */
+section {
+  padding: 100px 8%;
+}
+
+section .title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  font-family: "Cinzel", serif;
+  color: #111;
+  position: relative;
+}
+
+section .title span::after {
+  content: "";
+  width: 80px;
+  height: 3px;
+  display: block;
+  margin: 10px auto;
+  background: #0077ff;
+}
+
+/* ===== Home ===== */
+.home {
+  height: 100vh;
+  background: linear-gradient(120deg, #0f0f0f, #1a1a1a, #111 80%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.home .text-one {
+  font-size: 22px;
+  color: #bbb;
+}
+
+.home .text-two {
+  font-size: 48px;
+  font-weight: bold;
+  color: #0077ff;
+  margin: 10px 0;
+}
+
+.home .text-three {
+  font-size: 24px;
+  color: #eee;
+}
+
+.home .text-four {
+  font-size: 18px;
+  color: #bbb;
+  margin-top: 10px;
+}
+
+.home .button button {
+  margin-top: 25px;
+  padding: 12px 28px;
+  border: none;
+  background: #0077ff;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 119, 255, 0.4);
+}
+
+.home .button button:hover {
+  background: #005ecc;
+  transform: translateY(-2px);
+}
+
+/* ===== About ===== */
+.about {
+  background: #fff;
+  border-radius: 15px;
+}
+
+.about .about-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .about .left img {
+  width: 300px;
+  border-radius: 15px;
+  
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+} */
+
+.circle-image{
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    object-fit:contain;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    
+}
+
+.about .right .topic {
+  font-size: 22px;
+  font-weight: 600;
+  color: #0077ff;
+  margin-bottom: 15px;
+}
+
+.about .right p {
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.about .right .button button {
+  padding: 12px 25px;
+  border: none;
+  background: #0077ff;
+  color: #fff;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.about .right .button button:hover {
+  background: #005ecc;
+}
+
+/* ===== Skills ===== */
+.skills {
+  background: #f8f9fb;
+}
+
+.skills .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.skills .box {
+  flex: 1 1 200px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.skills .box:hover {
+  transform: translateY(-8px);
+}
+
+.skills .topic {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.skills .per {
+  font-size: 16px;
+  font-weight: bold;
+  color: #0077ff;
+}
+
+/* ===== Projects ===== */
+.projects .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.projects .box {
+  flex: 1 1 280px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.projects .box:hover {
+  transform: translateY(-6px);
+}
+
+.projects .topic {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #0077ff;
+}
+.projects .topic .button{
+  padding: 12px 28px;
+  border: none;
+  background: #0077ff;
+  color: #fff;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 119, 255, 0.4);
+}
+
+/* ===== Contact ===== */
+.contact {
+  background: #f8f9fb;
+  text-align: center;
+}
+
+.contact .topic {
+  font-size: 22px;
+  font-weight: 600;
+  color: #0077ff;
+  margin-bottom: 15px;
+}
+
+.contact p {
+  max-width: 600px;
+  margin: auto;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.contact .button button {
+  padding: 12px 28px;
+  border: none;
+  background: #0077ff;
+  color: #fff;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 119, 255, 0.4);
+}
+
+.contact .button button:hover {
+  background: #005ecc;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #111;
+  color: #ddd;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
