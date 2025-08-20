@@ -345,3 +345,75 @@ footer {
   padding: 20px;
   font-size: 14px;
 }
+
+/* ===== Mobile Responsive ===== */
+@media (max-width: 768px) {
+
+  /* Navbar menu stack */
+  nav .menu {
+    flex-direction: column;
+    background: rgba(17, 17, 17, 0.95);
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    display: none; /* toggle with JS menu-btn */
+  }
+
+  nav .menu li {
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .menu-btn, .cancel-btn {
+    display: block;
+  }
+
+  /* Home Section */
+  .home {
+    padding: 50px 20px;
+  }
+  .home .text-two {
+    font-size: 32px;
+  }
+  .home .text-three {
+    font-size: 18px;
+  }
+
+  /* About Section */
+  .about .about-details {
+    flex-direction: column;
+    text-align: center;
+  }
+  .circle-image {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+  }
+
+  /* Skills Section */
+  .skills .boxes {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Projects Section */
+  .projects .boxes {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .projects .box {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Contact Section */
+  .contact p {
+    padding: 0 15px;
+  }
+
+  /* General spacing */
+  section {
+    padding: 60px 15px;
+  }
+}
